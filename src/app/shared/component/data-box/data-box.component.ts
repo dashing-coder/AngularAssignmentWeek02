@@ -9,6 +9,7 @@ import {Card} from '../../interfaces';
 export class DataBoxComponent implements OnInit {
 
   @Input() dataBox: Card[] = [];
+  @Input() title = '';
 
   constructor() { }
 

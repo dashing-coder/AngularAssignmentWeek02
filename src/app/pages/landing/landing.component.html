@@ -3,10 +3,7 @@
     <h1 class="display-4">Angular Bootcamp Jan-2021</h1>
     <p class="lead">In this Angular Bootcamp 2021, we are going to learn how to make professional web application development. We will start from the beginning level, but we will take our level at any enterprise level software development development knowledge.</p>
   </div>
-  <h4 class="h4 text-center">All Student</h4>
-  <app-data-box [dataBox]="studentList"></app-data-box>
-
-  <h4 class="h4 text-center">All Teacher</h4>
-  <app-data-box [dataBox]="teacherList"></app-data-box>
+  <app-data-box [title]="studentTitle" [dataBox]="studentList"></app-data-box>
+  <app-data-box [title]="teacherTitle" [dataBox]="teacherList"></app-data-box>
 </main>
 

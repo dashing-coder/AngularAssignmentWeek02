@@ -7,9 +7,13 @@ import {Card} from '../../shared/interfaces';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
+  public studentTitle = '';
+  public teacherTitle = '';
   public studentList: Card[] = [];
   public teacherList: Card[] = [];
   constructor() {
+    this.studentTitle = 'All Student';
+    this.teacherTitle = 'All Teacher';
     this.studentList = this.getStudentList();
     this.teacherList = this.getTeacherList();
   }
